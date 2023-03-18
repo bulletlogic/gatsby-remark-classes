@@ -1,4 +1,4 @@
-const { selectAll } = require('unist-util-select');
+import { selectAll } from 'unist-util-select';
 
 const applyClassesToNode = (node, classes) => {
   node.data = node.data || {};
@@ -10,7 +10,7 @@ const applyClassesToNode = (node, classes) => {
   return node;
 };
 
-module.exports = ({ markdownAST }, { classMap = {} }) => {
+export default ({ markdownAST }, { classMap = {} }) => {
   Object.keys(classMap).forEach((selector) => {
     const nodes = selectAll(selector, markdownAST);
 
