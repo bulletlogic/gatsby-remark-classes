@@ -1,6 +1,6 @@
 {
   "name": "@bulletlogic/gatsby-remark-classes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Automatically add class attributes to rendered markdown elements",
   "type": "module",
   "main": "index.js",
